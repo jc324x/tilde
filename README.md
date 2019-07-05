@@ -6,10 +6,21 @@
   your git repos in sync across multiple computers
 - [js2x](https://github.com/jychri/js2x): Convert Javascript to Markdown and beyond with js2x
 
-`tilde`'s only function expands `~/` to `/Users/$user` where $user is
-the current user.
+`tilde`'s only function, `Abs`, expands `~/` to `/Users/current`,
+providing an absolute path to the current user's home directory. 
 
 ```go
+// Package tilde implements shorthand "~/"
+package tilde
+
+import (
+	"log"
+	u "os/user"
+	p "path"
+	"strings"
+)
+
+
 import (
 	"log"
 	u "os/user"
