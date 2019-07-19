@@ -1,6 +1,6 @@
 // +build !windows
 
-// Package tilde implements shorthand "~/"
+// Package tilde transforms tilde prefixed strings into absolute paths
 package tilde
 
 import (
