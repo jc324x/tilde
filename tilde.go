@@ -1,6 +1,6 @@
 // +build !windows
 
-// Package tilde transforms tilde prefixed strings into absolute paths
+// Package tilde converts tilde prefixed strings into absolute paths.
 package tilde
 
 import (
