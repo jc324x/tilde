@@ -10,7 +10,8 @@ import (
 	"strings"
 )
 
-// Abs replaces "~/" with "/User/$user/" and returns a clean path.
+// Abs expands "~/example" to "/User/$user/example" and returns a
+// clean path.
 func Abs(path string) string {
 
 	var user *u.User
